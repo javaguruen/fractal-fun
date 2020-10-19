@@ -10,7 +10,7 @@ def showImage(data, dim, extent):
         row = []
         for w in range(width):
             pixel = data[h*height + w]
-            row.append([pixel[0]/255.0, 0.0, 0.0 ])
+            row.append([pixel[0]/255.0, pixel[1]/255.0, pixel[2]/255.0 ])
         mappedData.append(row)
 
     fig = plt.figure()

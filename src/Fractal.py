@@ -8,7 +8,7 @@ width = 100
 center = (0.0, 0.0)
 radius = 2.0
 px = MandelBrot.draw(center[0], center[1], radius, 100, height, width)
-imageData = ColorMapper.mapToRed(px, width, height)
+imageData = ColorMapper.mapToBlue(px, width, height)
 
 Matplotlib.showImage(imageData, (width, height), (center[0]-radius, center[0]+radius, center[1]-radius, center[1]+radius))
 im2 = Image.new('RGB', (width,height))
